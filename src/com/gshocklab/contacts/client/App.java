@@ -11,7 +11,7 @@ import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.gshocklab.contacts.client.mvp.DemoActivityMapper;
-import com.gshocklab.contacts.client.mvp.DemoPlaceHistoryMapper;
+import com.gshocklab.contacts.client.mvp.AppPlaceHistoryMapper;
 import com.gshocklab.contacts.client.place.MailPlace;
 import com.gshocklab.contacts.client.view.AppLayoutImpl;
 
@@ -34,7 +34,7 @@ public class App implements EntryPoint {
 		ActivityManager      activityManager = new ActivityManager(activityMapper,eventBus);
 		activityManager.setDisplay(containerWidget);
 		// Дефолтное отображение <вида> (страницы) с активированным обработчиком истории
-		DemoPlaceHistoryMapper historyMapper = GWT.create(DemoPlaceHistoryMapper.class);
+		AppPlaceHistoryMapper historyMapper = GWT.create(AppPlaceHistoryMapper.class);
 		PlaceHistoryHandler   historyHandler = new PlaceHistoryHandler(historyMapper);
 		historyHandler.register(placeController,eventBus,defaultPlace);
 		
