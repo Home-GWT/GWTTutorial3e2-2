@@ -7,6 +7,7 @@ import com.gshocklab.contacts.client.ClientLinks;
 import com.gshocklab.contacts.client.view.MailView;
 
 public class MailActivity extends Activity implements MailView.IMailPresenter {
+	
 	private ClientFactory clientFactory;
 	
 	public MailActivity(ClientFactory clientFactory) {

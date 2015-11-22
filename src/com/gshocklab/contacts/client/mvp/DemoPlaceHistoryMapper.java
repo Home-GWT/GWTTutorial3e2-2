@@ -7,5 +7,4 @@ import com.gshocklab.contacts.client.place.MailPlace;
 import com.gshocklab.contacts.client.place.TasksPlace;
 
 @WithTokenizers({MailPlace.Tokenizer.class, ContactsPlace.Tokenizer.class, TasksPlace.Tokenizer.class})
-public interface DemoPlaceHistoryMapper extends PlaceHistoryMapper {
-}
+public interface DemoPlaceHistoryMapper extends PlaceHistoryMapper {}

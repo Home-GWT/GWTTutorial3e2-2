@@ -6,10 +6,11 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 
 public class MailViewImpl extends Composite implements MailView {
-	interface MailViewUiBinder extends UiBinder<Widget, MailViewImpl> {	}
-	private static MailViewUiBinder uiBinder = GWT.create(MailViewUiBinder.class);
 	
-	private IMailPresenter presenter;
+	interface MailViewUiBinder extends UiBinder<Widget, MailViewImpl> {}
+	
+	private static MailViewUiBinder uiBinder = GWT.create(MailViewUiBinder.class);
+	private IMailPresenter         presenter;
 
 	public MailViewImpl() {
 		initWidget(uiBinder.createAndBindUi(this));
