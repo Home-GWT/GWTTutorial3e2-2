@@ -12,6 +12,7 @@ import com.gshocklab.contacts.client.place.MailPlace;
 import com.gshocklab.contacts.client.place.TasksPlace;
 
 public class DemoActivityMapper implements ActivityMapper {
+	
 	private ClientFactory clientFactory;
 	
 	public DemoActivityMapper(ClientFactory clientFactory) {
