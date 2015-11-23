@@ -31,6 +31,20 @@
 ...для автоматической генерации реализации интерфейса при вызове метода 'GWT.create(Class)'
 
 
+===================================================================================================================================================
+** (Введение в MVP GWT 2.1) http://habrahabr.ru/post/113121/
+** (Блог татарина-программиста ** [GWT] Activities And Places (Вольный перевод)) http://gshmalik.blogspot.com/2014/11/gwt-activities-and-places.html
+** (Блог татарина-программиста ** [GWT] Building MVP apps: MVP Part I (Вольный перевод)) http://gshmalik.blogspot.com/2015/06/building-mvp-apps-mvp-part-i.html
+** (Блог татарина-программиста ** [GWT] Building MVP apps: MVP Part II (Вольный перевод)) http://gshmalik.blogspot.com/2015/08/gwt-building-mvp-apps-mvp-part-ii.html
+
+*  (GWT + mvp4g: лэйауты, порталы, портлеты) http://shamansir.github.io/gwt-mvp4g-layouting-demo/index-ru.html
+   (Тестирование GWT приложений архитектуры MVP) http://habrahabr.ru/post/246285/
+   http://kgiu.kz/wp-content/plugins/spoilers/import/?http%3A%2F%2Fkgiu.kz%2Fwp-content%2Fplugins%2Ffeedgrubber%2Fimport%2Ffrozen%3Fhttp%3A%2F%2Fhabrahabr.ru%2Frss%2Fblogs%2Fgwt%2F
+*  (GWT Development with Activities and Places) http://webcentersuite.blogspot.com/2011/08/gwt-development-with-activities-and.html
+*  (Managing GWT History and Hyperlinks Tutorial) http://developerlife.com/tutorials/?p=232
+
+(Java Web Application Developer) https://moikrug.ru/vacancies/933440495
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 * `[GWT] Activities And Places (Вольный перевод)`: [gshmalik.blogspot.com/2014/11/gwt-activities-and-places](http://gshmalik.blogspot.com/2014/11/gwt-activities-and-places.html)
 >1) GWT 2.1 представила встроенный framework для управления историей в браузере.
@@ -60,7 +74,7 @@
 >2.2) Как перемещаться:
 >     Для перехода на новый Place можно использовать метод goTo() экземпляра PlaceController...
 >     PlaceController оповещает текущее Activity о том, что оно может быть остановлено (через событие PlaceChangeRequestEvent).
->     Если остановка Activity разрешается, то выстреливается событие PlaceChangeEvent|/ValueChangeEvent с информацией о новой Place.
+>     Если остановка Activity разрешается, то выстреливается событие PlaceChangeEvent/ValueChangeEvent с информацией о новой Place.
 >     PlaceHistoryHandler ловит событие PlaceChangeEvents и обновляет историю токенов URL.
 >     ActivityManager так же слушает события PlaceChangeEvent. При помощи ActivityMapper он определяет Activity советующий Place’у. (Затем ActivityManager запускает это Activity)
 >     Когда пользователь переходит в новый URL (через гиперссылку, кнопку «назад» или закладку), PlaceHistoryHandler ловит событие ValueChangeEvent с объекта History и вызывает PlaceHistoryMapper для преобразования токена истории в соответствующий Place. Затем вызывается PlaceController.goTo() с новым Place.
