@@ -137,6 +137,8 @@
 *  `GWT architecture`: https://confluence.jetbrains.com/display/~link/GWT+architecture
 *  `GWT Tutorials: Google Web Toolkit`: http://easylearntutorial.com/series/watch/37/gwt-tutorials-google-web-toolkit
 ** `GWT MVP4G eventBus и классы`: http://javatalks.ru/topics/26177
+** `Creating and handling GWT сustom events`: http://dmitrynikol.blogspot.com/2012/06/gwt-ustom-events.html
+   ``: http://www.methodsandtools.com/archive/gwtgooglewebtoolkit.php
 
 Дело в том что объект 'Place' - является (не просто абстрактым) супер-абстрактным!
 Это по сути какой-то некий-абстракный контейнер, объект которого закеширован внутри реестра 'PlaceHistoryMapper'.
@@ -150,15 +152,17 @@
 'DOM' - извлекает... ('AbstractActivity'>>'ActivityMapper')
 Теперь чтобы как-то связать между собой 2-е части: 'PlaceHistoryMapper' и 'ActivityMapper' с помощью 'Place', здесь используется - 'EventBus'.
 
-Дело в том, что 'Place' это такой абстрактный контейнер, к которому применяется правило истории..., то-есть, для каждого абстрактного контейнера строиться уникальная история доступа к этому элементу. Такая истори доступа храниться в 'PlaceHistoryMapper'.
+1) Дело в том, что 'Place' это такой абстрактный контейнер, к которому применяется правило истории..., то-есть, для каждого абстрактного контейнера строиться уникальная история доступа к этому элементу. Такая истори доступа храниться в 'PlaceHistoryMapper'.
 >>>
 События которые изменяют состояние этой истории приходят-поступают из 'PlaceHistoryHandler'>>'PlaceController'...
 
-Дальше чтобы найти и вытащить элемент (абстрактный контейнер) 'Place' из этой истории - для этого используется 'DOM' ('AbstractActivity'>>'ActivityMapper')...
+2) Чтобы найти и вытащить элемент (абстрактный контейнер) 'Place' из этой истории - для этого используется 'DOM' ('AbstractActivity'>>'ActivityMapper')...
 >>>
 ('PlaceController' ходит-перебирает URL-фрагимент по истории...)
 
-
+А дальше происходит <магия>:
+- часть-1 (PlaceHistoryMapper-история) с частью-2 (ActivityMapper-логика-виджета) связываются между собой через объект 'Place' (URL-фрагмент) НЕявным (скрытым) способом с помощью механизма 'EventBus'.
+- в действительности-же класс-'EventBus' проделывает внутри сложные манипуляции... Дело в том, что часть-1 (PlaceHistoryMapper-история) и часть-2 (ActivityMapper-логика-виджета) работают совсем по разному И чтобы они независили друг от друга - 'EventBus' разделяет между ними зоны ответственности и предоставляет способ независимой связи между ними.
 
 
 
