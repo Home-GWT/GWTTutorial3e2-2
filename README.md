@@ -100,6 +100,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 * `[GWT] Activities And Places (Вольный перевод)`: [gshmalik.blogspot.com/2014/11/gwt-activities-and-places](http://gshmalik.blogspot.com/2014/11/gwt-activities-and-places.html)
 * `Введение в MVP GWT 2.1`: [habrahabr.ru/post/113121](http://habrahabr.ru/post/113121/)
+* `Разработка GWT приложения с использованием MVP и Mvp4G`: [dmitrynikol.blogspot.com/2011/08/gwt-mvp-mvp4g](http://dmitrynikol.blogspot.com/2011/08/gwt-mvp-mvp4g.html)
 >
 >     GWT 2.1 ввел интерфейс IsWidget, который реализуют большинство Widget’ов так же, как Composite.
 >
@@ -123,11 +124,39 @@
 >     Если остановка Activity разрешается, то выстреливается событие PlaceChangeEvent/ValueChangeEvent с информацией о новой Place.
 >     PlaceHistoryHandler ловит событие PlaceChangeEvents и обновляет историю токенов URL.
 >     ActivityManager так же слушает события PlaceChangeEvent. При помощи ActivityMapper он определяет Activity советующий Place’у. (Затем ActivityManager запускает это Activity)
+>
+>     EventBus похож на командный центр, который связывает вместе все остальные части.
+>     Основная его идея в том, что другие части не знают о друг друге и могут работать независимо в свободно связанной форме. Что в свою очередь означает, что мы получаем защищенное, поддерживаемое и масштабируемое решение.
+>     EventBus является очень важной частью, так как в приложении выступает в качестве точки входа.
+>
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+** `Разработка GWT приложения с использованием MVP и Mvp4G`: http://dmitrynikol.blogspot.com/2011/08/gwt-mvp-mvp4g.html
+*  `MVP/Event bus framework for GWT`: http://mvp4g.blogspot.com/
+*  `GWT architecture`: https://confluence.jetbrains.com/display/~link/GWT+architecture
+*  `GWT Tutorials: Google Web Toolkit`: http://easylearntutorial.com/series/watch/37/gwt-tutorials-google-web-toolkit
+** `GWT MVP4G eventBus и классы`: http://javatalks.ru/topics/26177
 
+Дело в том что объект 'Place' - является (не просто абстрактым) супер-абстрактным!
+Это по сути какой-то некий-абстракный контейнер, объект которого закеширован внутри реестра 'PlaceHistoryMapper'.
+Ключем доступа к этому абстракному контейнеру является его URL-фрагмент (ссылка).
 
+Итак, ключевым элементом для доступа к 'Place' являеться URL-фрагмент (ссылка).
+- такой URL-фрагмент (ссылка) сперва регистрруется для 'Tokenizer' (внутри объекта 'Place'... и в последствии попадает в реестр 'PlaceHistoryMapper');
+- потом такая же ссылка регистрируется в 'Activity'
 
+'PlaceHistoryMapper' - ложит... (преобразует 'Place' в URL-фрагимент)
+'DOM' - извлекает... ('AbstractActivity'>>'ActivityMapper')
+Теперь чтобы как-то связать между собой 2-е части: 'PlaceHistoryMapper' и 'ActivityMapper' с помощью 'Place', здесь используется - 'EventBus'.
+
+Дело в том, что 'Place' это такой абстрактный контейнер, к которому применяется правило истории..., то-есть, для каждого абстрактного контейнера строиться уникальная история доступа к этому элементу. Такая истори доступа храниться в 'PlaceHistoryMapper'.
+>>>
+События которые изменяют состояние этой истории приходят-поступают из 'PlaceHistoryHandler'>>'PlaceController'...
+
+Дальше чтобы найти и вытащить элемент (абстрактный контейнер) 'Place' из этой истории - для этого используется 'DOM' ('AbstractActivity'>>'ActivityMapper')...
+>>>
+('PlaceController' ходит-перебирает URL-фрагимент по истории...)
 
 
 

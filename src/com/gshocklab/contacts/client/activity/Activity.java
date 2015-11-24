@@ -16,15 +16,15 @@ public abstract class Activity extends AbstractActivity {
 		navLinks.put(ClientLinks.TASKS_LINK_ID, DOM.getElementById(ClientLinks.TASKS_LINK_ID));
 	}
 	
-	public void applyCurrentLinkStyle(String viewId) {
-		for (String linkId : navLinks.keySet()) {
+	public void applyCurrentLinkStyle(String viewId){
+		for( String linkId:navLinks.keySet() ){
 			final Element link = navLinks.get(linkId);
-			if (link == null) continue;
-			if (linkId.equals(viewId)) {
+			if( link == null)
+				continue;
+			if( linkId.equals(viewId) )
 				link.addClassName("b-current");
-			} else {
+			else
 				link.removeClassName("b-current");
-			}
 		}
 	}
 }
