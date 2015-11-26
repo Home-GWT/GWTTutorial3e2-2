@@ -166,7 +166,8 @@
 
 
 
-
+GWT Activities и Places (составляющие встроенного MVP)
+======================================================
 =================================================================[ Клиентская схема GWT-MVP ]======================================================
 Есть веб-браузер. В веб-браузере есть:
 - клиентское поле (передает/отображает клиентские данные с помощью <виджетов>);
@@ -243,6 +244,14 @@
 * 'PlaceHistoryHandler' регистрирует обработчика события ('PlaceController');
 * 'ActivityManager' возвращает тот (актуальный) класс-объект где нужно иннициализировать событие ('Activity');
 
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+http://habrahabr.ru/post/113121
+-------------------------------
+Регистрация обработчиков хэш-URL’ов, т.е. токенайзеров выполняется в интерфейсе PlaceHistoryMapper
+PlaceHistoryMapper, ActivityMapper — классы-мапперы, которые по сути отвечают за регистрацию всех Place’ов и Activity’ей приложения.
+-------------------------------
+Класс-обработчик события - это реализация мотода который возвращает результат... (по MVP-патерну это 'PlaceHistoryMapper')
+Источник-иннициатор события - это отправитель события... (по MVP-патерну это 'ActivityMapper')
 
 
 
@@ -250,11 +259,31 @@
 
 
 
+1. GWT Activities и Places (составляющие встроенного MVP)
+   ------------------------------------------------------
+   * (Tutorial - Managing GWT History and Hyperlinks) http://developerlife.com/tutorials/?p=232
+   * (Блог о Java технологиях ** Creating and handling GWT сustom events) http://dmitrynikol.blogspot.com/2012/06/gwt-ustom-events.html
+                                                                          https://github.com/dmitrynikol/java-gravity-ping-pong
+   * (Блог татарина-программиста ** [GWT] Activities And Places (Вольный перевод)) http://gshmalik.blogspot.com/2014/11/gwt-activities-and-places.html
+   * (Введение в MVP GWT 2.1 ** [GWT] Building MVP apps: MVP Part I (Вольный перевод) ** Tutorial-Contacts) http://habrahabr.ru/post/113121/
 
+2. GWT MVP
+   -------
+   * (Блог татарина-программиста ** [GWT] Building MVP apps: MVP Part I (Вольный перевод) ** Tutorial-Contacts.zip) http://gshmalik.blogspot.com/2015/06/building-mvp-apps-mvp-part-i.html
+   * (Блог татарина-программиста ** [GWT] Building MVP apps: MVP Part II (Вольный перевод) ** Tutorial-Contacts2.zip) http://gshmalik.blogspot.com/2015/08/gwt-building-mvp-apps-mvp-part-ii.html
 
+3. GWT Mvp4G
+   ---------
+   * (GWT + mvp4g: лэйауты, порталы, портлеты) http://shamansir.github.io/gwt-mvp4g-layouting-demo/index-ru.html
+                                               https://github.com/shamansir/gwt-mvp4g-layouting-demo
+   * (Блог о Java технологиях ** Разработка GWT приложения с использованием MVP и Mvp4G ** Mvp4gApp.rar) http://dmitrynikol.blogspot.com/2011/08/gwt-mvp-mvp4g.html
+   * (Interactions ** GWT Development with Activities and Places) http://webcentersuite.blogspot.com/2011/08/gwt-development-with-activities-and.html
+   * (MVP/Event bus framework for GWT) http://mvp4g.blogspot.com/
+   * (GWT MVP4G eventBus и классы) http://javatalks.ru/topics/26177
 
-
-
+4. Другое
+   ------
+   * (Блог о Java технологиях ** GWT carousel widget) http://dmitrynikol.blogspot.com/2012/06/gwt-carousel-widget.html
 
 
 
