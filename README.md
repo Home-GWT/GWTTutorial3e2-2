@@ -320,8 +320,14 @@ http://habrahabr.ru/post/113121
    ------
    * (Блог о Java технологиях ** GWT carousel widget) http://dmitrynikol.blogspot.com/2012/06/gwt-carousel-widget.html
 
+5. MVC MVP разница
+   ---------------
+   * (В чём разница между использованием MVC и MVP) http://habrahabr.ru/post/171925/
 
-
+![05](05.png)
+![48ab2035b5c9817a19e4f2eec3694d41](48ab2035b5c9817a19e4f2eec3694d41.png)
+![8991b895c3944457f79b559ca9966109](8991b895c3944457f79b559ca9966109.png)
+![96cf77c32653720c0d327f88f305a513](96cf77c32653720c0d327f88f305a513.png)
 
 
 
