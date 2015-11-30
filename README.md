@@ -324,6 +324,10 @@ http://habrahabr.ru/post/113121
    ---------------
    * (В чём разница между использованием MVC и MVP) http://habrahabr.ru/post/171925/
    * (Паттерны для новичков: MVC vs MVP vs MVVM) http://habrahabr.ru/post/215605/
+   * ( https://outcoldman.com/ru/archive/2010/02/22/паттерны-mvc-mvp-и-mvvm/ )
+   * ( http://bb3x.ru/blog/patternyi-dlya-novichkov-mvc-vs-mvp-vs-mvvm/ )
+   * ( http://ita2010.psu.ru:81/blogs/sppo/382/ )
+   * ( http://javatalks.ru/topics/23914 )
 
 ![05](05.png)
 ![48ab2035b5c9817a19e4f2eec3694d41](48ab2035b5c9817a19e4f2eec3694d41.png)
