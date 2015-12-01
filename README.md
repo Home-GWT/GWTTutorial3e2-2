@@ -372,6 +372,83 @@ http://habrahabr.ru/post/113121
 
 
 
+(GWT приложение за 30 минут ** Качаем последнюю версию Spring-Roo 1.1M1 с сайта Spring Source) http://habrahabr.ru/post/94141/
+(Магия программирования ** Spring Roo. Что за зверь?) http://dr-magic.blogspot.com/2010/11/spring-roo.html
+ --------------------------------------------------------------
+http://projects.spring.io/spring-roo/#running-from-shell
+http://s3.springsource.com/MRKT/roo/2010-01-Five_Minutes_Roo.mov
+https://www.youtube.com/watch?v=K78vL72XDqw
+
+
+(Spring Roo Eclipse Plugin Installation ** SpringSource Update Site for Eclipse 4.3) http://www.javabeat.net/spring-roo-spring-data-jpa-eclipse-integration/ >> http://dist.springsource.com/release/TOOLS/update/e4.3/
+(Install Spring Tool Suite for existing Eclipse IDE) http://www.codejava.net/ides/eclipse/install-spring-tool-suite-for-existing-eclipse-ide
+ --------------------------------------------------
+Help > Eclipse Marketplace
+Tool Suite or 'STS' into the Find textfield and hit > Enter
+Select:
+- 'Core / Spring IDE'
+- 'Extensions / Spring IDE'
+- 'Resources / Eclipse Integration Commons'
+- 'Resources / Spring IDE'
+and click next and install
+
+
+(Install spring plugin in Eclipse Luna) http://stackoverflow.com/questions/25784161/install-spring-plugin-in-eclipse-luna
+ -------------------------------------
+Name: SpringSource Update Site for Eclipse 4.3
+URL: http://dist.springsource.com/release/TOOLS/update/e4.3/
+
+
+(PrimeFaces + Spring Roo + Spring Data JPA Integration Example) http://www.javabeat.net/primefaces-spring-roo-spring-data-mysql/
+(Spring Roo + Spring Data JPA Repositories + Eclipse Integration) http://www.javabeat.net/spring-roo-spring-data-jpa-eclipse-integration/
+(Spring Roo: Fast Java Application Development Tool) http://www.cubrid.org/blog/dev-platform/spring-roo-fast-java-application-development-tool/
+
+
+(A GWT Application with MVP Pattern Deploying to CloudFoundry using Spring Roo) http://www.slideshare.net/aliparmaksiz79/a-gwt-application-with-mvp-pattern-deploying-to-cloudfoundry-using-spring-roo
+
+(Введение в Spring Roo: Часть 2. Разработка приложения при помощи Spring Roo) http://www.ibm.com/developerworks/ru/library/os-springroo1/
+                                                                              http://www.ibm.com/developerworks/ru/library/os-springroo2/
+                                                                              http://www.ibm.com/developerworks/ru/library/os-springroo6/
+(GWT with Roo and STS) http://gwtsts.blogspot.com/2011/03/part-ii-generating-gwt-project-using.html
+                       http://edlovesjava.blogspot.com/2011/07/getting-started-with-spring-roo-gwt-and.html
+(Create a Spring project from Spring ToolSuite) http://hantsy.blogspot.com/2013/06/create-spring-project-from-spring.html
+(Spring Tool Suite (STS) for Eclipse) https://marketplace.eclipse.org/content/spring-tool-suite-sts-eclipse
+
+http://docs.spring.io/spring-roo/reference/html/intro.html#intro-first-steps
+http://docs.spring.io/spring-roo/reference/html/base-gwt.html
+http://webcentersuite.blogspot.com/2012/11/create-gwt-project-with-spring-roo-and.html
+
+http://www.beingjavaguys.com/2013/02/spring-roo-simple-hello-world-example.html
+https://forums.manning.com/posts/list/22353.page
+http://www.mkyong.com/spring/how-to-install-spring-ide-in-eclipse/
+https://jira.spring.io/browse/ROO-3633
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
