@@ -294,6 +294,12 @@ http://habrahabr.ru/post/113121
 
 
 
+
+* `(#1 ...BrowserHistory3e...)`  http://developerlife.com/tutorials/?p=232
+* `(#2 ...CustomGwtEvents3e...)` http://dmitrynikol.blogspot.com/2012/06/gwt-ustom-events.html
+* `(#3 ...Good-bye...)`          http://gshmalik.blogspot.com/2014/11/gwt-activities-and-places.html
+
+
 1. GWT Activities и Places (составляющие встроенного MVP)
    ------------------------------------------------------
    * (Tutorial - Managing GWT History and Hyperlinks) http://developerlife.com/tutorials/?p=232
