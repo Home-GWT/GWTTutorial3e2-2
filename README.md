@@ -300,6 +300,8 @@ http://habrahabr.ru/post/113121
 * `(#3 ...Good-bye...)`          http://gshmalik.blogspot.com/2014/11/gwt-activities-and-places.html
 
 
+0. (Удаленные процедуры в GWT) http://bigbelk.users.sourceforge.net/articles/prog_rpc.html
+
 1. GWT Activities и Places (составляющие встроенного MVP)
    ------------------------------------------------------
    * (Tutorial - Managing GWT History and Hyperlinks) http://developerlife.com/tutorials/?p=232
@@ -428,10 +430,13 @@ http://www.beingjavaguys.com/2013/02/spring-roo-simple-hello-world-example.html
 https://forums.manning.com/posts/list/22353.page
 http://www.mkyong.com/spring/how-to-install-spring-ide-in-eclipse/
 https://jira.spring.io/browse/ROO-3633
+http://www.pleso.net/ru/publications/tags/GWT/
 
 
-
-
+(Создание программной инструментальной среды для проектирования электронных порталов) http://eos.ibi.spb.ru/umk/5_13/15/15_P1_R1_T2.html
+(PowerDesigner) http://www.belani.narod.ru/1/PD9.htm
+                http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc38093.1610/doc/html/rad1250775767456.html
+                http://help.sap.com/saphelp_pd1655_pdweb/helpdata/en/80/f0dac564a141ebbd802c591fcc2ef0/content.htm?frameset=/en/a9/8e52bd864b4a979f1aec79c7c69290/frameset.htm&current_toc=/en/01/63fc145dfa421ab4881e72af3f5bc3/plain.htm&node_id=4&show_children=false
 
 
 
