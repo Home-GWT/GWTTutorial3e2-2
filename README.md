@@ -475,6 +475,9 @@ http://www.pleso.net/ru/publications/tags/GWT/
                                     ( http://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/ )
 * `Потоки`: https://github.com/Home-Java8/Java7/blob/master/README-3.md
 * `разница между private package и protected`: http://www.quizful.net/interview/java/access-modifiers
+* `init-блок`: http://habrahabr.ru/post/133237/
+               http://www.quizful.net/post/java-fields-initialization
+               http://opensourcerules.net/java/gl4_1.html
 
 
 
