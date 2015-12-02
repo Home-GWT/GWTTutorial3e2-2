@@ -464,6 +464,17 @@ http://www.pleso.net/ru/publications/tags/GWT/
 
 
 
+Еще ссылки по вопросам на собеседование (чтобы вспомнить старый материал)
+-------------------------------------------------------------------------
+* `контракт между equals и hashcode`: https://github.com/Home-Java8/Java7/blob/master/src/main/java/com/HashMapStructure.java
+                                      http://j4sq.blogspot.com/2012/01/java-2-middle.html
+                                      http://dr-magic.blogspot.com/2009/01/java-se-2.html
+                                      http://dr-magic.blogspot.com/2009/01/java-se-1.html
+                                    ( http://www.quizful.net/interview/java/using-hashcode )
+                                    ( http://habrahabr.ru/post/168195/ )
+                                    ( http://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/ )
+* `Потоки`: https://github.com/Home-Java8/Java7/blob/master/README-3.md
+* `разница между private package и protected`: http://www.quizful.net/interview/java/access-modifiers
 
 
 
@@ -483,29 +494,6 @@ http://www.pleso.net/ru/publications/tags/GWT/
 
 
 
-
-
--------------------------------
-Регистрация обработчиков хэш-URL’ов, т.е. токенайзеров выполняется в интерфейсе PlaceHistoryMapper
-PlaceHistoryMapper, ActivityMapper — классы-мапперы, которые по сути отвечают за регистрацию всех Place’ов и Activity’ей приложения.
--------------------------------
-Класс-обработчик события - это реализация мотода который возвращает результат... (по MVP-патерну это 'PlaceHistoryMapper')
-Источник-иннициатор события - это отправитель события... (по MVP-патерну это 'ActivityMapper')
-
-
- 'HandlerManager' - отвечает за управление обработчиками событий.
-  Как было сказано ранее, любой получатель событий, который хочет получать события должен зарегистрировать себя в качестве заинтересованного.
-  Он ('HandlerManager') позволяет регистрировать обработчика событий, а они могут отправлять конкретные события для каждого зарегистрированного обработчика.
-  Когда создается 'HandlerManager' он принимает один аргумент в конструкторе.
-  Каждое событие имеет источник происхождения (виджет) и этот параметр будет использоваться в качестве источника для всех событий отправляемых через этот HandlerManager.
-
-(Иной способ создания собственных событий) построим еще одну реализацию событий с использованием GWT 'EventBus':
-- Чтобы зарегистрировать обработчик для события с 'eventBus' нужно вызвать статический метод HandlerRegistration.register(<EventBus>, <SmileReceivedEvent.Handler>);
-- Для инициирования события на eventBus следует вызвать метод 'fireEvent()' и передать в качестве аргумента событие;
-
-
-
-... 'Command' - это команда (фреймворк) для передачи данных на сервер...
 
 
 
