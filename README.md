@@ -467,14 +467,15 @@ http://www.pleso.net/ru/publications/tags/GWT/
 Еще ссылки по вопросам на собеседование (чтобы вспомнить старый материал)
 -------------------------------------------------------------------------
 * `Object (10-методов: hashCode,equals,toString,white,notifay,clone,finalize,getClass)`:
-* `контракт между hashcode (число:ссылка на объект||по состоянию полей) и equals (транзитивност,симметричность,рефлексивность) + (контракт между equals-hashcode: Object равны И hashCode равны + hashCode разные И Object гарантировано разные + Object разные могут иметь равные hashCode = коллизия)`: https://github.com/Home-Java8/Java7/blob/master/src/main/java/com/HashMapStructure.java
+* `interface (понимание ревлексия: какой тип вызова можем знать НЕ в момент компиляции, а в момент выполнения объекта)`:
+* `контракт между hashcode (число:ссылка на объект||по состоянию полей) и equals (транзитивност,симметричность,рефлексивность) + (контракт между equals-hashcode: Object равны И hashCode равны + hashCode разные И Object гарантировано разные + Object разные могут иметь равные hashCode = коллизия) + (используется для работы с Hash-таблицами И предикатами)`: https://github.com/Home-Java8/Java7/blob/master/src/main/java/com/HashMapStructure.java
                                       http://j4sq.blogspot.com/2012/01/java-2-middle.html
                                       http://dr-magic.blogspot.com/2009/01/java-se-2.html
                                       http://dr-magic.blogspot.com/2009/01/java-se-1.html
                                     ( http://www.quizful.net/interview/java/using-hashcode )
                                     ( http://habrahabr.ru/post/168195/ )
                                     ( http://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/ )
-* `Потоки`: https://github.com/Home-Java8/Java7/blob/master/README-3.md
+* `Потоки (5-способов синхронизаций: обычная синхронизация по this.Object, static-синхронизация на уровне классов, лок-синхронизацию относительно 1-объекта white/notify, volatile-атомарность для переменных, бины get/set-методы + приоритеты)`: https://github.com/Home-Java8/Java7/blob/master/README-3.md
 * `разница между private-package (видны: в пакете) и protected (видны: в пакете и наследнике) + (можно расширять модификатор, кроме private)`: http://www.quizful.net/interview/java/access-modifiers
 * `init-блок (static{},{},конструктор) + (конструктор: НЕможет быть static,final) + (interface: НЕможет иметь конструкторов И static-полей, НО может иметь final-поля И опредеение класса)`: http://habrahabr.ru/post/133237/
                http://www.quizful.net/post/java-fields-initialization
