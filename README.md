@@ -466,7 +466,7 @@ http://www.pleso.net/ru/publications/tags/GWT/
 
 Еще ссылки по вопросам на собеседование (чтобы вспомнить старый материал)
 -------------------------------------------------------------------------
-* `контракт между equals и hashcode`: https://github.com/Home-Java8/Java7/blob/master/src/main/java/com/HashMapStructure.java
+* `контракт между hashcode (число:ссылка на объект||по состоянию полей) и equals (транзитивност,симметричность,рефлексивность)`: https://github.com/Home-Java8/Java7/blob/master/src/main/java/com/HashMapStructure.java
                                       http://j4sq.blogspot.com/2012/01/java-2-middle.html
                                       http://dr-magic.blogspot.com/2009/01/java-se-2.html
                                       http://dr-magic.blogspot.com/2009/01/java-se-1.html
