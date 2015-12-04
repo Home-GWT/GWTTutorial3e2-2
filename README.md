@@ -534,6 +534,7 @@ http://www.pleso.net/ru/publications/tags/GWT/
 * `Объясните суть паттерна DI или IoC`: [java-spring-hibernate](http://j4sq.blogspot.com/2012/01/java-spring-hibernate.html)
 * `Spring | Hibernate | cache`: [miratex-master ** Task](https://github.com/JobTest/vitrinaPredmainTask/tree/miratex-master/Task)
 
+* `hibernate кэширование`: [135176](http://habrahabr.ru/post/135176/) | [136375](http://habrahabr.ru/post/136375/) | [26](http://articles.javatalks.ru/articles/26) ( [13-hibernate](http://javac-dmx.blogspot.com/2015/01/13-hibernate.html) | [hibernate-otkluchit-keshirovanie](http://www.sql.ru/forum/975837/hibernate-otkluchit-keshirovanie) )
 
 [Установка уровня изоляции](https://msdn.microsoft.com/ru-ru/library/ms173763%28v=sql.120%29.aspx) ( [wikipedia](https://ru.wikipedia.org/wiki/Уровень_изолированности_транзакций) )
 ===========================
