@@ -480,7 +480,7 @@ http://www.pleso.net/ru/publications/tags/GWT/
 * `init-блок (static{},{},конструктор) + (конструктор: НЕможет быть static,final) + (interface: НЕможет иметь конструкторов И static-полей, НО может иметь final-поля И опредеение класса)`: http://habrahabr.ru/post/133237/
                http://www.quizful.net/post/java-fields-initialization
                http://opensourcerules.net/java/gl4_1.html
-* `GWT-RPC`: имеет 6-составляющих (этапов)
+* `GWT-RPC`: имеет 7-составляющих (этапов)
 1. модель Serializable ........................................... (/shared)
 2. GWT-RPC сервис RemoteService .................................. (/client)
 3. асинхронные-запросы AsyncCallback ............................. (/client)
